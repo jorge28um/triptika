@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --verde: #0e3b3a;
+  --verde-claro: #1d5b58;
+  --papel: #f3f6f5;
+  --tinta: #14211f;
+  --azafran: #f0a93b;
+  --linea: #d3dcd9;
+  --apagado: #5b6c69;
+  --display: 'Bricolage Grotesque', system-ui, sans-serif;
+
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--tinta);
+  background: var(--papel);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: left;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--verde-claro);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
