@@ -315,4 +315,19 @@ button:focus-visible {
   opacity: 0.06;
   pointer-events: none;
 }
+.fondo-logo {
+  position: fixed;
+  inset: 0;
+  background: url('/logo.png') center / min(85vmin, 760px) no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.encabezado,
+.contacto,
+footer {
+  position: relative;
+  z-index: 1;
+}
 }

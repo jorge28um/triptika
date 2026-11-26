@@ -100,6 +100,11 @@ function App() {
   const linkedin = normalizarUrl(empresa.linkedin)
 
   return (
+        <div className="pagina">
+
+      <div className="fondo-logo" />
+      <div className="fondo-decorativo decoracion-uno" />
+      <div className="fondo-decorativo decoracion-dos" />
     <div className="pagina">
 
       <div className="fondo-decorativo decoracion-uno" />
@@ -109,7 +114,7 @@ function App() {
       <header className="encabezado">
 
         <img
-          src="/triptika-logo.png"
+          src="/logo.png"
           alt="TRIPTIKA Consultores en Recursos Humanos"
           className="logo"
         />
