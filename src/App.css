@@ -366,3 +366,46 @@ button:focus-visible {
     animation: none !important;
   }
 }
+
+/* BOTÓN FLOTANTE DE WHATSAPP */
+.whatsapp-flotante {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 50px;
+  background: #25D366;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-flotante svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .whatsapp-flotante {
+    right: 16px;
+    bottom: 16px;
+    padding: 13px;
+  }
+
+  .whatsapp-flotante span {
+    display: none;
+  }
+}
