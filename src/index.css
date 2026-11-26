@@ -45,4 +45,13 @@ button:focus-visible {
   * {
     transition: none !important;
   }
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url('/logo.png') center / min(90vmin, 800px) no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
 }
