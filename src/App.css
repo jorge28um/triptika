@@ -315,3 +315,54 @@ button:focus-visible {
   pointer-events: none;
   z-index: 0;
 }
+/* Efecto interactivo para los contactos */
+.canal {
+  transition: transform 0.3s ease;
+}
+
+.canal:hover {
+  transform: translateX(6px);
+}
+
+/* Rebote del icono */
+.icono {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.canal:hover .icono {
+  animation: rebote 0.65s ease;
+  background: var(--dorado);
+  color: white;
+}
+
+/* Animación de rebote */
+@keyframes rebote {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-9px);
+  }
+
+  45% {
+    transform: translateY(0);
+  }
+
+  65% {
+    transform: translateY(-4px);
+  }
+
+  85% {
+    transform: translateY(0);
+  }
+}
+
+/* Respetar usuarios que prefieren movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .canal,
+  .icono {
+    transition: none !important;
+    animation: none !important;
+  }
+}
