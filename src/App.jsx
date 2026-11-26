@@ -100,13 +100,9 @@ function App() {
   const linkedin = normalizarUrl(empresa.linkedin)
 
   return (
-        <div className="pagina">
-
-      <div className="fondo-logo" />
-      <div className="fondo-decorativo decoracion-uno" />
-      <div className="fondo-decorativo decoracion-dos" />
     <div className="pagina">
 
+      <div className="fondo-logo" />
       <div className="fondo-decorativo decoracion-uno" />
       <div className="fondo-decorativo decoracion-dos" />
 
